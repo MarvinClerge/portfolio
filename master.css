@@ -63,18 +63,45 @@ body {
 .project {
   display: flex;
   width: 100%;
-  min-height: 200px;
+  min-height: 100px;
   margin-bottom: 30px;
   background: white;
 }
 
-.project > * {
-  border: 1px solid;
+.project-side {
+  position: relative;
+  width: 30%;
+  display: inline;
 }
 
-.project-side {
+.project-image {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.52);
+  color: white;
+  position: absolute;
+  top: 0;
   height: 100%;
-  width: 30%;
+  width: 100%;
+}
+
+.overlay > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.project-image:hover + .overlay {
+  display: inline;
+}
+
+.overlay:hover {
+  display: inline;
 }
 
 .project-main {
