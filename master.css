@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
 
 }
+
+/* Side Section */
 
 .side {
   width: 400px;
@@ -31,10 +37,78 @@
   font-size: 30px;
 }
 
+.fade-in {
+  animation: fade-in 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Main Section */
+
 .main {
-  border: 1px solid;
   width: calc(100vw - 400px);
   position: absolute;
   left: 400px;
-  height: 1000px;
+  background: #d1d1d1;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 30px;
+  background: white;
+}
+
+.project > * {
+  border: 1px solid;
+}
+
+.project-side {
+  height: 100%;
+  width: 30%;
+}
+
+.project-main {
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+}
+
+.project-title > * {
+  display: inline;
+}
+
+.project-title > a {
+  display: inline;
+  font-size: 15px;
+  font-weight: 100;
+  color: #6767a1;
+}
+
+.project-features {
+  padding: 10px;
+}
+
+.project-features > ul > li {
+  list-style-position: inside;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  background: #d6d6d6;
+  padding: 5px;
+  margin: 5px;
 }
