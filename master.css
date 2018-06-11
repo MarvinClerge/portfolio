@@ -44,8 +44,7 @@ body {
 
 @keyframes fade-in {
   0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
+  20%, 80% { opacity: 1; }
   100% { opacity: 0; }
 }
 
@@ -62,6 +61,7 @@ body {
 
 .project {
   display: flex;
+  border-radius: 2px;
   width: 100%;
   min-height: 100px;
   margin-bottom: 30px;
@@ -71,7 +71,6 @@ body {
 .project-side {
   position: relative;
   width: 30%;
-  display: inline;
 }
 
 .project-image {
@@ -138,4 +137,6 @@ body {
   background: #d6d6d6;
   padding: 5px;
   margin: 5px;
+  border-radius: 2px;
+  font-size: 15px;
 }
