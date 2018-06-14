@@ -12,6 +12,25 @@ body {
 
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.605);
+  z-index: 99;
+}
+
+.modal-content {
+  position: absolute;
+  background: white;
+  height: 80vh;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* Side Section */
 
 .side {
@@ -74,14 +93,14 @@ body {
   width: calc(100vw - 400px);
   position: absolute;
   left: 400px;
-  background: #d1d1d1;
+  background: #e3e3e3;
   min-height: 100vh;
   padding: 30px;
 }
 
 .project {
   display: flex;
-  border-radius: 2px;
+  border-radius: 5px;
   width: 100%;
   min-height: 100px;
   margin-bottom: 30px;
